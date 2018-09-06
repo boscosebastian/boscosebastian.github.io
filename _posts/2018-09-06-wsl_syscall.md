@@ -36,11 +36,11 @@ KiSystemService is the kernel functio providing system services. This function i
 
 The function `nt!KiSystemServiceUser` function determines if the Syscall is initiated by PicoProcess (WSL). It checks if the process is minimal process from the flag at 0x3 location of _KTHREAD structure. 
 
-![1.PNG](attachments\7aba899d.PNG)
+<img src="{{ site.url }}{{ site.baseurl }}/attachments/7aba899d.PNG" alt="">
 
 ebx contains pointer to _KTHREAD structure.
 
-![minimal flag.png](attachments\1fc1113a.png)
+![minimal flag.png](/attachments/1fc1113a.png)
 
 If the minimal flag is set in the KTHREAD, it calls `nt!PicoSystemCallDispatch`
 ## nt!PicoSystemCallDispatch
