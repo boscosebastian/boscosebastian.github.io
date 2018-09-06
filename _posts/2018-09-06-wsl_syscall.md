@@ -45,12 +45,12 @@ ebx contains pointer to _KTHREAD structure.
 If the minimal flag is set in the KTHREAD, it calls `nt!PicoSystemCallDispatch`
 ## nt!PicoSystemCallDispatch
 
-![2.PNG](attachments\fcab642b.PNG)
+![2.PNG](/attachments/fcab642b.PNG)
 `nt!PsPicoSystemCallDispatch` function is a wrapper. It copies the address of `LXCORE!PicoSystemCallDispatch` function to eax and calls eax transferring control to LXCORE
 
 ## LXCORE!PicoSystemCallDispatch
 
-![lxcore!PicoSystemCallDispatch.png](attachments\c523ba9f.png)
+![lxcore!PicoSystemCallDispatch.png](/attachments/c523ba9f.png)
 
 This function passes the controll to `LxpSysDispatch` after incrementing the value of `LxpSystemCallCount`. 
  
