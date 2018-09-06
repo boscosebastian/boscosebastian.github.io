@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Cyber Security Blogs"
+title                    : "Security Blogs"
 title_separator          : "-"
 name                     : "Bosco Sebastian"
 description              : "Security blogs."
